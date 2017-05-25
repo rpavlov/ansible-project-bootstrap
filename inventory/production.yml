@@ -1,0 +1,10 @@
+pet_nativa-web1 ansible_ssh_host=ec2-52-23-176-216.compute-1.amazonaws.com
+
+[pet_nativa-web]
+pet_nativa-web1
+
+[pet_nativa:children]
+pet_nativa-web
+
+[web:children]
+pet_nativa-web
