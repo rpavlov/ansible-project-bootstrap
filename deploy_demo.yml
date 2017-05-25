@@ -4,3 +4,9 @@
     ansible_ssh_user: "{{ user }}"
   roles:
     - rails-deploy
+
+- hosts: web
+  sudo: true
+  tasks:
+    - service: name=sidekiq state=stopped
+    - service: name=sidekiq state=started
