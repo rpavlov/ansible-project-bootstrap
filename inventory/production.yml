@@ -1,0 +1,7 @@
+bok2-web1 ansible_ssh_host=ec2-13-58-22-220.us-east-2.compute.amazonaws.com
+
+[bok2-web]
+bok2-web1
+
+[web:children]
+bok2-web
