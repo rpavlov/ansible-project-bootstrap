@@ -6,6 +6,6 @@ app_name: bok2
 app_path: /var/local/apps/bok2
 rails_env: production
 user: deploy
-max_upload_size: 5m
+max_upload_size: 200m
 environment_variables:
   DISABLE_SPRING: 1
