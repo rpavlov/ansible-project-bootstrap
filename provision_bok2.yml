@@ -4,6 +4,15 @@
   roles:
     - postgresql-server
 
+- hosts: worker
+  sudo: true
+  roles:
+    - yarn
+    - git
+    - postgresql-client
+    - rails
+    - sidekiq
+
 - hosts: web
   sudo: true
   vars:
